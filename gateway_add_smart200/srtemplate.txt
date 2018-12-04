@@ -1,0 +1,18 @@
+wsn8377658284878378009920181203084714
+
+10,100,GET,/identity/externalIds/c8y_Serial/%%,,application/json,%%,STRING,
+
+10,101,POST,/inventory/managedObjects,application/json,application/json,%%,,"{""name"":""SmartWSN-Gateway"",""type"":""c8y_hello"",""c8y_IsDevice"":{},""com_cumulocity_model_Agent"":{}}"
+
+10,102,POST,/identity/globalIds/%%/externalIds,application/json,,%%,STRING STRING,"{""externalId"":""%%"",""type"":""c8y_Serial""}"
+
+10,103,POST,/measurement/measurements,application/json,,%%,NOW UNSIGNED NUMBER,"{""time"":""%%"",""source"":{""id"":""%%""},""type"":""c8y_CPUMeasurement"",""c8y_CPUMeasurement"":{""Workload"":{""value"":%%,""unit"":""%""}}}"
+
+10,104,PUT,/inventory/managedObjects/%%,application/json,,%%,UNSIGNED STRING,"{""c8y_SupportedOperations"":[%%]}"
+
+10,105,PUT,/devicecontrol/operations/%%,application/json,,%%,UNSIGNED STRING,"{""status"":""%%""}"
+
+11,500,$.managedObject,,$.id
+11,501,,$.c8y_IsDevice,$.id
+11,502,,$.c8y_Restart,$.id,$.deviceId
+10,200,POST,/measurement/measurements,application/json,,%%,NOW UNSIGNED NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER NUMBER,"{""time"":""%%"",""source"":{""id"":""%%""},""type"":""OBJ"",""OBJ"":{""i0.3"":{""value"":%%,""unit"":null},""i1.4"":{""value"":%%,""unit"":null},""i2.5"":{""value"":%%,""unit"":null},""q0.6"":{""value"":%%,""unit"":null},""q1.7"":{""value"":%%,""unit"":null},""m2.1"":{""value"":%%,""unit"":null},""mb13"":{""value"":%%,""unit"":null},""mw5"":{""value"":%%,""unit"":null},""md22"":{""value"":%%,""unit"":null},""v23.1"":{""value"":%%,""unit"":null},""vb133"":{""value"":%%,""unit"":null},""vw56"":{""value"":%%,""unit"":null},""vd228"":{""value"":%%,""unit"":null}}}"

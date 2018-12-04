@@ -1,0 +1,13 @@
+M2.1= 1
+Mb13= 34
+Mw5= 25
+Md22= 305419896
+v23.1= 1
+vb133= 255
+vw56= 5436
+vd228= 13252352
+
+
+
+/usr/bin/python
+/home/root/200smart.py
